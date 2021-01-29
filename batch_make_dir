@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+import os
+file_path=os.path.abspath(r"E:\MaoBoShi\code_1\test")
+for i in range(271,366):    #按照顺序创建目录
+    a="{}".format(i)          #格式，可以在大括号后面加汉字，或者改成别的格式
+    file_name=file_path + "\\"+a     #输出目录设定
+    os.makedirs(file_name)
